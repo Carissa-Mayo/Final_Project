@@ -107,7 +107,7 @@ gmgi_forest_edna <- get_edna(gmgi_forest_edna)
 #### all together ####
 gmgi_forest_result_eDNA <- get_stan_df(gmgi_forest_count, gmgi_forest_edna, 1, "count_FR_edna.csv")
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%% Pavilion Beach %%%%%%%%%%%%%%%%%%%%%%%%%%% 
+# %%%%%%%%%%%%%%%%%%%%%%%%%%% Pavilion Beach Data %%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 gmgi_pb_dat <- all_dat %>% filter(Source == "Gloucester Marine Genomics Institute"| Source == "GMGI", Location == "Pavilion Beach, MA")
 gmgi_pb_edna <- all_edna %>% filter(grepl("^MAPB-\\d$", Sample_ID))
