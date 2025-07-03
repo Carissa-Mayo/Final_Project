@@ -89,7 +89,7 @@ get_stan_df <- function(data, edna, write, name) {
   df <- df %>% select(-c("Sample_date"))
   
   if (write == 1) {
-    write_csv(df, file = paste("/Users/carissamayo/Metzger Lab Dropbox/Carissa Mayo/Final_Project/Data/", name))
+    write_csv(df, file = paste0("/Users/carissamayo/Metzger Lab Dropbox/Carissa Mayo/Final_Project/Data/", name))
   }
 }
 
@@ -108,7 +108,7 @@ gmgi_forest_prop <- get_props(gmgi_forest_count)
 gmgi_forest_edna <- get_edna(gmgi_forest_edna)
 
 #### all together ####
-gmgi_forest_result_eDNA <- get_stan_df(gmgi_forest_count, gmgi_forest_edna, 0, "count_FR_edna.csv")
+gmgi_forest_result_eDNA <- get_stan_df(gmgi_forest_count, gmgi_forest_edna, 1, "count_FR_edna.csv")
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%% Pavilion Beach Data %%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
