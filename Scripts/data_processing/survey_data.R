@@ -125,7 +125,7 @@ gmgi_pb_prop <- get_props(gmgi_pb_count)
 gmgi_pb_edna <- get_edna(gmgi_pb_edna)
 
 #### all together ####
-gmgi_pb_result_eDNA23 <- get_stan_df(gmgi_pb_count, gmgi_pb_edna, 0, "count_PB_edna.csv")
+gmgi_pb_result_eDNA23 <- get_stan_df(gmgi_pb_count, gmgi_pb_edna, 1, "count_PB_edna.csv")
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%% Figure Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
